@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://claimletterhelpai.netlify.app/sitemap.xml
+Sitemap: https://insuranceclaimletterhelp.com/sitemap.xml

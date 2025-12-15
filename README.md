@@ -40,7 +40,7 @@ Required environment variables:
 - `STRIPE_SECRET_KEY` - Your Stripe secret key
 - `STRIPE_PUBLIC_KEY` - Your Stripe publishable key
 - `STRIPE_PRICE_ID` - Your Stripe price ID for the appeal service
-- `SITE_URL` - Your production domain (https://www.claimletter.ai)
+- `SITE_URL` - Your production domain (https://insuranceclaimletterhelp.com)
 
 ### 2. Supabase Setup
 
