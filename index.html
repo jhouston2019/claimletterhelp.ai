@@ -50,14 +50,16 @@
 
     <main>
         <!-- HERO -->
-        <section id="upload-irs-letter" style="position:relative; min-height:280px; display:grid; place-items:center; text-align:center; color:#ffffff; padding:48px 0; background: url('./images/claimhelp.jpg') center/cover no-repeat;">
-            <div style="position:absolute; top:0; left:0; right:0; bottom:0; background:rgba(0,0,0,0.65); z-index:1;"></div>
+        <section id="upload-irs-letter" style="position:relative; min-height:380px; display:grid; place-items:center; text-align:center; color:#ffffff; padding:60px 20px; background: url('./images/claimhelp.jpg') center/cover no-repeat;">
+            <div style="position:absolute; top:0; left:0; right:0; bottom:0; background:rgba(0,0,0,0.75); z-index:1;"></div>
             <div style="width:min(1120px, 92%); margin-inline:auto; position:relative; z-index:2;">
-                <h1 style="font-size:clamp(2rem, 3.8vw, 3rem); margin:0.25rem 0; text-shadow:0 2px 24px rgba(0,0,0,0.5); color:#ffffff; text-align:center;">Procedural Insurance Correspondence Preparation</h1>
-                <p style="font-size:clamp(1.125rem, 1.5vw, 1.25rem); color:#ffffff; margin:14px auto 8px auto; text-align:center; display:block; width:100%;">Risk-aware, scope-limited system for preparing insurance claim correspondence. May refuse output in certain scenarios.</p>
-                <div style="background:rgba(34, 197, 94, 0.2); border:1px solid rgba(34, 197, 94, 0.4); border-radius:20px; padding:8px 16px; margin:8px auto; display:inline-block; font-size:0.9rem; color:#ffffff;">✓ All insurance types • ✓ All 50 states • ✓ 24/7 Access</div>
+                <h1 style="font-size:clamp(2rem, 3.8vw, 3rem); margin:0 0 1.5rem 0; text-shadow:0 2px 24px rgba(0,0,0,0.5); color:#ffffff; text-align:center; line-height:1.2;">Procedural Insurance Claim Correspondence</h1>
+                <div style="max-width:900px; margin:0 auto; background:rgba(0,0,0,0.4); border:2px solid rgba(255,255,255,0.3); border-radius:12px; padding:2rem;">
+                  <p style="font-size:1.1rem; color:#ffffff; margin:0 0 1rem 0; line-height:1.7;">This system prepares limited, procedural insurance correspondence based on the insurer's letter you upload. It does not argue claims, negotiate coverage, or replace professional representation.</p>
+                  <p style="font-size:1.1rem; color:#fca5a5; margin:0; line-height:1.7; font-weight:500;">In certain situations — including fraud investigations, EUO requests, or legal disputes — the system will refuse to generate a response. This is intentional.</p>
+                </div>
                 <div style="margin-top:30px;">
-                    <a href="/payment.html" style="background:#22c55e; color:#fff; padding:14px 28px; border-radius:6px; text-decoration:none; box-shadow:0 4px 12px rgba(34, 197, 94, 0.3);" aria-label="Prepare procedural correspondence for $79">Prepare Procedural Correspondence – $79</a>
+                    <a href="/payment.html" style="background:#22c55e; color:#fff; padding:14px 28px; border-radius:6px; text-decoration:none; box-shadow:0 4px 12px rgba(34, 197, 94, 0.3); font-size:1.1rem; font-weight:600;" aria-label="Upload Insurer Letter">Upload Insurer Letter</a>
                 </div>
             </div>
         </section>
@@ -114,26 +116,24 @@
           </div>
         </section>
 
-        <!-- EXAMPLES -->
+        <!-- CLAIM TYPES -->
         <section id="examples" style="padding:60px 20px; background:#1e293b; color:#fff;">
-          <h2 style="text-align:center;">Instantly Generate Insurance Claim Response Letters for Home, Auto, Health, and Business Claims</h2>
-          <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:20px; margin-top:30px;">
-            <div style="background:#0f172a; padding:20px; border-radius:8px;">
-              <h3>Homeowners Claim Denial <span style="font-size:0.8em; color:#94a3b8;">(Property damage, water damage, fire)</span></h3>
-              <p><strong>AI Summary:</strong> Claim denial for property damage.</p>
-              <p><strong>Response Preview:</strong> Explains policy coverage and requests reconsideration with supporting documentation.</p>
+          <h2 style="text-align:center;">Claim Types Processed</h2>
+          <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:20px; margin-top:30px; max-width:900px; margin-left:auto; margin-right:auto;">
+            <div style="background:#0f172a; padding:20px; border-radius:8px; border:1px solid #334155;">
+              <h3>Property Claims <span style="font-size:0.8em; color:#94a3b8;">(Homeowners, Renters)</span></h3>
+              <p style="color:#94a3b8; font-size:0.95rem;">System classifies property damage claims and prepares procedural correspondence if permitted.</p>
             </div>
-            <div style="background:#0f172a; padding:20px; border-radius:8px;">
-              <h3>Auto Insurance Appeal <span style="font-size:0.8em; color:#94a3b8;">(Accident claims, total loss, underpayment)</span></h3>
-              <p><strong>AI Summary:</strong> Auto claim underpayment or denial.</p>
-              <p><strong>Response Preview:</strong> Details accident circumstances and policy terms, requests fair valuation.</p>
+            <div style="background:#0f172a; padding:20px; border-radius:8px; border:1px solid #334155;">
+              <h3>Auto Claims <span style="font-size:0.8em; color:#94a3b8;">(Collision, Comprehensive)</span></h3>
+              <p style="color:#94a3b8; font-size:0.95rem;">System classifies auto claims and prepares procedural correspondence if permitted.</p>
             </div>
-            <div style="background:#0f172a; padding:20px; border-radius:8px;">
-              <h3>Health Insurance Appeal <span style="font-size:0.8em; color:#94a3b8;">(Medical necessity, coverage denials)</span></h3>
-              <p><strong>AI Summary:</strong> Medical claim or procedure denial.</p>
-              <p><strong>Response Preview:</strong> Provides medical necessity justification and policy compliance evidence.</p>
+            <div style="background:#0f172a; padding:20px; border-radius:8px; border:1px solid #334155;">
+              <h3>Health Claims <span style="font-size:0.8em; color:#94a3b8;">(Medical, Prescription)</span></h3>
+              <p style="color:#94a3b8; font-size:0.95rem;">System classifies health claims and prepares procedural correspondence if permitted.</p>
             </div>
           </div>
+          <p style="text-align:center; margin-top:2rem; color:#94a3b8; font-size:0.9rem; font-style:italic;">Business claims over $50,000 require professional representation and will be refused.</p>
         </section>
 
     <!-- PROBLEM -->
@@ -153,16 +153,18 @@
             </div>
         </section>
 
-    <!-- SOLUTION -->
+    <!-- HOW IT WORKS -->
         <section style="padding:72px 0; background:#f8f6f0; color:#2d3748;">
             <div style="width:min(1120px, 92%); margin-inline:auto;">
                 <h2 style="text-align:center; font-size:2.5rem; margin-bottom:3rem; color:#2d3748;">How It Works</h2>
-                <div style="display:grid; gap:18px; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));">
-          <div style="background:#ffffff; border:1px solid #e5e7eb; border-radius:14px; padding:18px; box-shadow:0 4px 14px rgba(15, 23, 42, 0.06); text-align:center;"><div style="font-size:22px; width:44px; height:44px; display:grid; place-items:center; border-radius:10px; background:#eef2ff; color:#1e40af; margin-bottom:8px; margin:0 auto 1.5rem;">1</div><h3 style="color:#2d3748; margin-bottom:1rem; font-size:1.4rem;">Pay & Upload Your Letter</h3><p style="color:#4a5568; opacity:0.8; line-height:1.6;">Secure one-time payment of $79, then upload your insurance claim letter. We support PDFs and images.</p></div>
-          <div style="background:#ffffff; border:1px solid #e5e7eb; border-radius:14px; padding:18px; box-shadow:0 4px 14px rgba(15, 23, 42, 0.06); text-align:center;"><div style="font-size:22px; width:44px; height:44px; display:grid; place-items:center; border-radius:10px; background:#eef2ff; color:#1e40af; margin-bottom:8px; margin:0 auto 1.5rem;">2</div><h3 style="color:#2d3748; margin-bottom:1rem; font-size:1.4rem;">Classification & Phase Detection</h3><p style="color:#4a5568; opacity:0.8; line-height:1.6;">System classifies claim type and detects letter phase. May refuse if dangerous scenario detected.</p></div>
-          <div style="background:#ffffff; border:1px solid #e5e7eb; border-radius:14px; padding:18px; box-shadow:0 4px 14px rgba(15, 23, 42, 0.06); text-align:center;"><div style="font-size:22px; width:44px; height:44px; display:grid; place-items:center; border-radius:10px; background:#eef2ff; color:#1e40af; margin-bottom:8px; margin:0 auto 1.5rem;">3</div><h3 style="color:#2d3748; margin-bottom:1rem; font-size:1.4rem;">Procedural Outline Only</h3><p style="color:#4a5568; opacity:0.8; line-height:1.6;">Generates short, procedural correspondence outline. No persuasion, no negotiation, no strategy.</p></div>
+                <div style="display:grid; gap:18px; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); max-width:1200px; margin:0 auto;">
+          <div style="background:#ffffff; border:1px solid #e5e7eb; border-radius:14px; padding:24px; box-shadow:0 4px 14px rgba(15, 23, 42, 0.06);"><div style="font-size:22px; width:44px; height:44px; display:grid; place-items:center; border-radius:10px; background:#eef2ff; color:#1e40af; margin-bottom:12px;">1</div><h3 style="color:#2d3748; margin-bottom:0.75rem; font-size:1.2rem;">Upload the insurer's letter</h3><p style="color:#4a5568; line-height:1.6; margin:0; font-size:0.95rem;">Upload PDF or image of the letter you received from your insurance carrier.</p></div>
+          <div style="background:#ffffff; border:1px solid #e5e7eb; border-radius:14px; padding:24px; box-shadow:0 4px 14px rgba(15, 23, 42, 0.06);"><div style="font-size:22px; width:44px; height:44px; display:grid; place-items:center; border-radius:10px; background:#eef2ff; color:#1e40af; margin-bottom:12px;">2</div><h3 style="color:#2d3748; margin-bottom:0.75rem; font-size:1.2rem;">System classifies claim type and phase</h3><p style="color:#4a5568; line-height:1.6; margin:0; font-size:0.95rem;">Automated classification determines claim type, party type, and letter phase.</p></div>
+          <div style="background:#ffffff; border:1px solid #e5e7eb; border-radius:14px; padding:24px; box-shadow:0 4px 14px rgba(15, 23, 42, 0.06);"><div style="font-size:22px; width:44px; height:44px; display:grid; place-items:center; border-radius:10px; background:#eef2ff; color:#1e40af; margin-bottom:12px;">3</div><h3 style="color:#2d3748; margin-bottom:0.75rem; font-size:1.2rem;">Risk checks are applied</h3><p style="color:#4a5568; line-height:1.6; margin:0; font-size:0.95rem;">System evaluates whether scenario requires professional representation.</p></div>
+          <div style="background:#ffffff; border:1px solid #e5e7eb; border-radius:14px; padding:24px; box-shadow:0 4px 14px rgba(15, 23, 42, 0.06);"><div style="font-size:22px; width:44px; height:44px; display:grid; place-items:center; border-radius:10px; background:#eef2ff; color:#1e40af; margin-bottom:12px;">4</div><h3 style="color:#2d3748; margin-bottom:0.75rem; font-size:1.2rem;">Procedural response outline prepared (if permitted)</h3><p style="color:#4a5568; line-height:1.6; margin:0; font-size:0.95rem;">If safe, system prepares short procedural correspondence outline.</p></div>
+          <div style="background:#ffffff; border:1px solid #e5e7eb; border-radius:14px; padding:24px; box-shadow:0 4px 14px rgba(15, 23, 42, 0.06);"><div style="font-size:22px; width:44px; height:44px; display:grid; place-items:center; border-radius:10px; background:#dc2626; color:#ffffff; margin-bottom:12px;">⚠</div><h3 style="color:#2d3748; margin-bottom:0.75rem; font-size:1.2rem;">System refuses if not permitted</h3><p style="color:#4a5568; line-height:1.6; margin:0; font-size:0.95rem;">If dangerous scenario detected, system explains why it cannot assist.</p></div>
                     </div>
-        <p style="font-size:.9rem;margin-top:1.5rem; color:#2d3748;"><strong>Disclaimer:</strong> This is not legal or insurance advice. This system prepares procedural correspondence only and does not negotiate, argue, or replace professional representation. For fraud investigations, EUO requests, reservation of rights, or attorney involvement, you MUST consult a licensed attorney.</p>
+        <p style="font-size:.9rem;margin-top:2rem; color:#2d3748; text-align:center; max-width:800px; margin-left:auto; margin-right:auto;"><strong>This is not legal or insurance advice.</strong> This system prepares procedural correspondence only. For fraud investigations, EUO requests, reservation of rights, or attorney involvement, you MUST consult a licensed attorney.</p>
             </div>
         </section>
 
@@ -185,7 +187,7 @@
                             <li style="padding:8px 0; border-bottom:1px solid #e2e8f0;"><strong>Health Insurance:</strong> Medical necessity, coverage denials</li>
                             <li style="padding:8px 0; border-bottom:1px solid #e2e8f0;"><strong>Business Insurance:</strong> Property damage, business interruption</li>
                             <li style="padding:8px 0; border-bottom:1px solid #e2e8f0;"><strong>Appeal Letters:</strong> Request for reconsideration</li>
-                            <li style="padding:8px 0;"><strong>Underpayment:</strong> Disputed claim valuation</li>
+                            <li style="padding:8px 0;"><strong>Underpayment:</strong> Claim valuation questions</li>
                         </ul>
                     </div>
                     
@@ -227,11 +229,11 @@
     <!-- TRUST -->
         <section style="padding:72px 0; background:#ffffff; color:#2d3748;">
             <div style="width:min(1120px, 92%); margin-inline:auto;">
-                <h2 style="text-align:center; font-size:2.5rem; margin-bottom:3rem; color:#2d3748;">Why Choose ClaimLetterHelp?</h2>
-                <div style="display:grid; gap:18px; grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));">
-          <div style="background:#ffffff; border:1px solid #e5e7eb; border-radius:14px; padding:18px; box-shadow:0 4px 14px rgba(15, 23, 42, 0.06); text-align:center;"><div style="font-size:22px; width:44px; height:44px; display:grid; place-items:center; border-radius:10px; background:#eef2ff; color:#1e40af; margin-bottom:8px; margin:0 auto 1rem;">🔒</div><h3 style="color:#2d3748; margin-bottom:1rem; font-size:1.3rem;">Risk-Aware</h3><p style="color:#4a5568; opacity:0.8; line-height:1.6;">Refuses output in dangerous scenarios (fraud, EUO, attorney involvement).</p></div>
-          <div style="background:#ffffff; border:1px solid #e5e7eb; border-radius:14px; padding:18px; box-shadow:0 4px 14px rgba(15, 23, 42, 0.06); text-align:center;"><div style="font-size:22px; width:44px; height:44px; display:grid; place-items:center; border-radius:10px; background:#eef2ff; color:#1e40af; margin-bottom:8px; margin:0 auto 1rem;">📋</div><h3 style="color:#2d3748; margin-bottom:1rem; font-size:1.3rem;">Scope-Limited</h3><p style="color:#4a5568; opacity:0.8; line-height:1.6;">Prepares correspondence only. No negotiation, no persuasion, no strategy.</p></div>
-          <div style="background:#ffffff; border:1px solid #e5e7eb; border-radius:14px; padding:18px; box-shadow:0 4px 14px rgba(15, 23, 42, 0.06); text-align:center;"><div style="font-size:22px; width:44px; height:44px; display:grid; place-items:center; border-radius:10px; background:#eef2ff; color:#1e40af; margin-bottom:8px; margin:0 auto 1rem;">⚙️</div><h3 style="color:#2d3748; margin-bottom:1rem; font-size:1.3rem;">Procedural</h3><p style="color:#4a5568; opacity:0.8; line-height:1.6;">Deterministic, structured outlines. No free-form generation.</p></div>
+                <h2 style="text-align:center; font-size:2.5rem; margin-bottom:3rem; color:#2d3748;">System Characteristics</h2>
+                <div style="display:grid; gap:18px; grid-template-columns:repeat(auto-fit, minmax(250px, 1fr)); max-width:900px; margin:0 auto;">
+          <div style="background:#ffffff; border:1px solid #e5e7eb; border-radius:14px; padding:24px; box-shadow:0 4px 14px rgba(15, 23, 42, 0.06);"><div style="font-size:22px; width:44px; height:44px; display:grid; place-items:center; border-radius:10px; background:#eef2ff; color:#1e40af; margin-bottom:12px;">🔒</div><h3 style="color:#2d3748; margin-bottom:0.75rem; font-size:1.2rem;">Risk-Aware</h3><p style="color:#4a5568; line-height:1.6; margin:0; font-size:0.95rem;">Refuses output in dangerous scenarios (fraud, EUO, attorney involvement).</p></div>
+          <div style="background:#ffffff; border:1px solid #e5e7eb; border-radius:14px; padding:24px; box-shadow:0 4px 14px rgba(15, 23, 42, 0.06);"><div style="font-size:22px; width:44px; height:44px; display:grid; place-items:center; border-radius:10px; background:#eef2ff; color:#1e40af; margin-bottom:12px;">📋</div><h3 style="color:#2d3748; margin-bottom:0.75rem; font-size:1.2rem;">Scope-Limited</h3><p style="color:#4a5568; line-height:1.6; margin:0; font-size:0.95rem;">Prepares correspondence only. No negotiation, no persuasion, no strategy.</p></div>
+          <div style="background:#ffffff; border:1px solid #e5e7eb; border-radius:14px; padding:24px; box-shadow:0 4px 14px rgba(15, 23, 42, 0.06);"><div style="font-size:22px; width:44px; height:44px; display:grid; place-items:center; border-radius:10px; background:#eef2ff; color:#1e40af; margin-bottom:12px;">⚙️</div><h3 style="color:#2d3748; margin-bottom:0.75rem; font-size:1.2rem;">Procedural</h3><p style="color:#4a5568; line-height:1.6; margin:0; font-size:0.95rem;">Deterministic, structured outlines. No free-form generation.</p></div>
           <div style="background:#ffffff; border:1px solid #e5e7eb; border-radius:14px; padding:18px; box-shadow:0 4px 14px rgba(15, 23, 42, 0.06); text-align:center;"><div style="font-size:22px; width:44px; height:44px; display:grid; place-items:center; border-radius:10px; background:#eef2ff; color:#1e40af; margin-bottom:8px; margin:0 auto 1rem;">🔒</div><h3 style="color:#2d3748; margin-bottom:1rem; font-size:1.3rem;">Secure & Private</h3><p style="color:#4a5568; opacity:0.8; line-height:1.6;">Your claim data is encrypted, never shared.</p></div>
           <div style="background:#ffffff; border:1px solid #e5e7eb; border-radius:14px; padding:18px; box-shadow:0 4px 14px rgba(15, 23, 42, 0.06); text-align:center;"><div style="font-size:22px; width:44px; height:44px; display:grid; place-items:center; border-radius:10px; background:#eef2ff; color:#1e40af; margin-bottom:8px; margin:0 auto 1rem;">🌎</div><h3 style="color:#2d3748; margin-bottom:1rem; font-size:1.3rem;">Nationwide Coverage</h3><p style="color:#4a5568; opacity:0.8; line-height:1.6;">Works with all insurance carriers</p></div>
           <div style="background:#ffffff; border:1px solid #e5e7eb; border-radius:14px; padding:18px; box-shadow:0 4px 14px rgba(15, 23, 42, 0.06); text-align:center;"><div style="font-size:22px; width:44px; height:44px; display:grid; place-items:center; border-radius:10px; background:#eef2ff; color:#1e40af; margin-bottom:8px; margin:0 auto 1rem;">📱</div><h3 style="color:#2d3748; margin-bottom:1rem; font-size:1.3rem;">Access Anywhere</h3><p style="color:#4a5568; opacity:0.8; line-height:1.6;">Upload from any device, any state</p></div>
@@ -367,32 +369,21 @@
         <section style="text-align:center; padding:70px 0; background:#0f172a; color:#ffffff;">
             <div style="width:min(1120px, 92%); margin-inline:auto;">
                 <h2 style="font-size:2.5rem; margin-bottom:1.5rem; font-weight:700; color:#ffffff;">Procedural Correspondence Preparation</h2>
-                <p style="color:#64748b; margin:8px 0 22px; font-size:1.2rem;">Risk-aware, scope-limited system. May refuse output in certain scenarios.</p>
-                <a href="/payment.html" style="display:inline-block; padding:14px 22px; font-weight:600; text-decoration:none; border-radius:10px; background:linear-gradient(180deg, #22c55e, #16a34a); color:#ffffff; box-shadow:0 6px 18px rgba(34, 197, 94, 0.35); transition:transform 0.12s ease, box-shadow 0.12s ease, opacity 0.12s ease;" aria-label="Prepare procedural correspondence">Prepare Procedural Correspondence</a>
+                <p style="color:#94a3b8; margin:8px 0 22px; font-size:1.1rem; max-width:700px; margin-left:auto; margin-right:auto;">This system prepares limited, procedural insurance correspondence. It does not argue claims, negotiate coverage, or replace professional representation.</p>
+                <a href="/payment.html" style="display:inline-block; padding:14px 28px; font-weight:600; text-decoration:none; border-radius:10px; background:linear-gradient(180deg, #22c55e, #16a34a); color:#ffffff; box-shadow:0 6px 18px rgba(34, 197, 94, 0.35); font-size:1.1rem;" aria-label="Upload Insurer Letter">Upload Insurer Letter</a>
             </div>
         </section>
     </main>
 
-    <footer style="padding:28px 0; background:#0b1220; color:#cbd5e1; text-align:center;">
+    <footer style="padding:40px 20px; background:#0b1220; color:#cbd5e1; text-align:center;">
         <div style="width:min(1120px, 92%); margin-inline:auto;">
-            <div style="background:#1e293b; border-radius:12px; padding:30px; margin-bottom:20px;">
-                <h3 style="color:#ffffff; font-size:1.5rem; margin-bottom:15px;">Serving All Major US Cities</h3>
-                <p style="color:#94a3b8; margin:0; line-height:1.6;">
-                    Insurance Claim Help in: 
-                    <a href="#" style="color:#93c5fd; text-decoration:none;" title="Insurance Claim Help New York">New York</a> • 
-                    <a href="#" style="color:#93c5fd; text-decoration:none;" title="Insurance Claim Help Los Angeles">Los Angeles</a> • 
-                    <a href="#" style="color:#93c5fd; text-decoration:none;" title="Insurance Claim Help Chicago">Chicago</a> • 
-                    <a href="#" style="color:#93c5fd; text-decoration:none;" title="Insurance Claim Help Houston">Houston</a> • 
-                    <a href="#" style="color:#93c5fd; text-decoration:none;" title="Insurance Claim Help Phoenix">Phoenix</a> • 
-                    <a href="#" style="color:#93c5fd; text-decoration:none;" title="Insurance Claim Help Philadelphia">Philadelphia</a> • 
-                    <a href="#" style="color:#93c5fd; text-decoration:none;" title="Insurance Claim Help San Antonio">San Antonio</a> • 
-                    <a href="#" style="color:#93c5fd; text-decoration:none;" title="Insurance Claim Help San Diego">San Diego</a> • 
-                    <a href="#" style="color:#93c5fd; text-decoration:none;" title="Insurance Claim Help Dallas">Dallas</a> • 
-                    <a href="#" style="color:#93c5fd; text-decoration:none;" title="Insurance Claim Help San Jose">San Jose</a>
-                    <br>and all 50 states
+            <div style="background:#1e293b; border-radius:12px; padding:30px; margin-bottom:20px; max-width:800px; margin-left:auto; margin-right:auto;">
+                <p style="color:#ffffff; margin:0; font-size:1.1rem; line-height:1.7;">
+                    This tool prepares procedural insurance correspondence only.<br>
+                    It is not legal advice and may refuse output in certain scenarios.
                 </p>
             </div>
-            <p>&copy; 2025 ClaimLetterHelp. <a href="/privacy.html" style="color:#93c5fd; text-decoration:none;">Privacy Policy</a> | <a href="/terms.html" style="color:#93c5fd; text-decoration:none;">Terms</a> | <a href="/disclaimer.html" style="color:#93c5fd; text-decoration:none;">Disclaimer</a></p>
+            <p style="margin-top:20px;">&copy; 2025 ClaimLetterHelp. <a href="/privacy.html" style="color:#93c5fd; text-decoration:none;">Privacy Policy</a> | <a href="/terms.html" style="color:#93c5fd; text-decoration:none;">Terms</a> | <a href="/disclaimer.html" style="color:#93c5fd; text-decoration:none;">Disclaimer</a></p>
         </div>
     </footer>
 
