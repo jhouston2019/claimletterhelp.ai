@@ -1,4 +1,117 @@
-User-agent: *
-Allow: /
+# robots.txt for ClaimLetterHelp
+# Procedural, scope-limited insurance correspondence preparation system
+# NOT legal advice - see disclaimer at /disclaimer.html
 
+User-agent: *
+
+# Allow indexing of all SEO landing pages and educational content
+Allow: /
+Allow: /insurance-claim-letter-help.html
+Allow: /claim-letter-response.html
+Allow: /insurance-letter-response-tool.html
+Allow: /reservation-of-rights-letter-response.html
+Allow: /request-for-information-letter.html
+Allow: /denial-letter-response.html
+Allow: /partial-denial-letter-response.html
+Allow: /proof-of-loss-letter-help.html
+Allow: /homeowners-claim-letter-help.html
+Allow: /auto-claim-letter-help.html
+Allow: /commercial-claim-letter-help.html
+Allow: /claim-letter-help-not-legal-advice.html
+Allow: /claim-letter-help-vs-attorney.html
+Allow: /claim-letter-help-vs-chatgpt.html
+Allow: /pricing.html
+Allow: /privacy.html
+Allow: /terms.html
+Allow: /disclaimer.html
+
+# Disallow system internals and user-facing application surfaces
+Disallow: /.netlify/
+Disallow: /netlify/
+Disallow: /.netlify/functions/
+Disallow: /api/
+Disallow: /admin
+Disallow: /admin.html
+
+# Disallow upload flows and user interaction pages
+Disallow: /upload
+Disallow: /upload.html
+Disallow: /upload-hardened.html
+Disallow: /upload.html.DEPRECATED
+Disallow: /dashboard
+Disallow: /dashboard.html
+
+# Disallow payment and transaction pages
+Disallow: /payment
+Disallow: /payment.html
+Disallow: /checkout
+Disallow: /checkout.js
+Disallow: /success
+Disallow: /success.html
+Disallow: /cancel
+Disallow: /cancel.html
+Disallow: /thank-you
+Disallow: /thank-you.html
+
+# Disallow authentication pages
+Disallow: /login
+Disallow: /login.html
+Disallow: /signup
+Disallow: /signup.html
+
+# Disallow resource pages (deprecated or internal)
+Disallow: /resource
+Disallow: /resource.html
+Disallow: /resource-hardened.html
+Disallow: /resource.html.DEPRECATED
+Disallow: /resources.html
+
+# Disallow examples and test pages
+Disallow: /examples
+Disallow: /examples.html
+Disallow: /test-
+Disallow: /test-payment-flow.html
+Disallow: /test-suite.js
+
+# Disallow deprecated and backup files
+Disallow: /*.DEPRECATED
+Disallow: /*-hardened.html
+Disallow: /setup-environment.js
+
+# Disallow documentation and internal files
+Disallow: /DEPLOYMENT
+Disallow: /PHASE-
+Disallow: /PRODUCTION-
+Disallow: /SAFETY-
+Disallow: /STAGING-
+Disallow: /HARDENING-
+Disallow: /MARKETING-
+Disallow: /NO-REGRESSION-
+Disallow: /QUICK-START
+Disallow: /SETUP
+Disallow: /TEST-RESULTS
+Disallow: /*.md
+Disallow: /*.sql
+Disallow: /*.mjs
+Disallow: /scripts/
+
+# Disallow specific claim-type pages that might create confusion
+Disallow: /claim-delay-no-response.html
+Disallow: /claim-denied-help.html
+Disallow: /insurance-adjuster-letter.html
+Disallow: /insurance-claim-help.html
+Disallow: /underpaid-insurance-claim.html
+
+# Disallow build artifacts and configuration
+Disallow: /dist/
+Disallow: /node_modules/
+Disallow: /supabase/
+Disallow: /vite.config.js
+Disallow: /package.json
+Disallow: /package-lock.json
+Disallow: /.gitignore
+Disallow: /env.example
+Disallow: /netlify.toml
+
+# Sitemap location
 Sitemap: https://insuranceclaimletterhelp.com/sitemap.xml
