@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insurance Letter Analysis – ClaimLetterHelp</title>
+    <meta name="description" content="Procedural insurance correspondence preparation system. Scope-limited, risk-aware letter analysis.">
+    <link rel="canonical" href="https://insuranceclaimletterhelp.com/upload.html">
+</head>
+<body style="background:#0f172a; color:#ffffff; font-family:'Inter',sans-serif; margin:0; padding:0; line-height:1.5;">
+    <nav style="background:#1e293b; padding:1rem; box-shadow:0 1px 4px rgba(0,0,0,0.1); display:flex; justify-content:space-between; border-bottom: 2px solid #334155;">
+        <div style="color: #f5f5f5;"><strong>ClaimLetterHelp</strong></div>
+        <div>
+            <a href="/upload.html" style="color: #f5f5f5; text-decoration: none; margin: 0 10px; padding: 8px 16px; border-radius: 4px;">Upload</a> |
+            <a href="/dashboard.html" style="color: #f5f5f5; text-decoration: none; margin: 0 10px; padding: 8px 16px; border-radius: 4px;">Dashboard</a> |
+            <a href="/pricing.html" style="color: #f5f5f5; text-decoration: none; margin: 0 10px; padding: 8px 16px; border-radius: 4px;">Pricing</a>
+        </div>
+    </nav>
+
+    <div style="width:min(1120px, 92%); margin-inline:auto; padding:2rem 0;">
+        <!-- CRITICAL WARNING -->
+        <div style="background:#7f1d1d; border:2px solid #dc2626; border-radius:12px; padding:1.5rem; margin-bottom:2rem; color:#ffffff;">
+            <h3 style="color:#fca5a5; margin:0 0 1rem 0; font-size:1.2rem;">⚠️ IMPORTANT LIMITATIONS</h3>
+            <p style="margin:0 0 0.5rem 0; font-size:0.95rem;"><strong>This system CANNOT help with:</strong></p>
+            <ul style="margin:0; padding-left:1.5rem; font-size:0.9rem; line-height:1.6;">
+                <li>Fraud investigations or misrepresentation allegations</li>
+                <li>Examination Under Oath (EUO) requests</li>
+                <li>Recorded statement requests</li>
+                <li>Reservation of rights letters</li>
+                <li>Bad faith allegations or litigation threats</li>
+                <li>Commercial claims over $50,000</li>
+                <li>Any letter mentioning attorneys or legal action</li>
+            </ul>
+            <p style="margin:1rem 0 0 0; font-size:0.85rem; font-style:italic;">If your letter involves any of the above, you MUST consult an attorney. This system will refuse to generate output.</p>
+        </div>
+
+        <div style="max-width:700px; margin:2rem auto; padding:2rem; background:#ffffff; border-radius:12px; box-shadow:0 4px 6px rgba(0,0,0,0.1); color:#2d3748; border:1px solid #e2e8f0;">
+            <h2 style="text-align:center; margin-bottom:2rem; color:#2d3748; font-size:1.8rem;">Upload Insurance Letter</h2>
+            
+            <!-- STEP 1: FILE UPLOAD -->
+            <div style="margin-bottom:2rem; padding:1.5rem; background:#f8fafc; border-radius:8px; border:1px solid #e2e8f0;">
+                <h3 style="color:#1e40af; margin:0 0 1rem 0; font-size:1.1rem;">Step 1: Upload Letter</h3>
+                <input type="file" id="file" name="file" accept=".pdf,.jpg,.jpeg,.png" required 
+                    style="width:100%; padding:14px 16px; border:2px solid #e2e8f0; border-radius:10px; font-family:'Inter',sans-serif; font-size:1rem; background:#ffffff; color:#2d3748;">
+                <small style="color:#64748b; font-size:0.85rem; display:block; margin-top:0.5rem;">Supported: PDF, JPG, PNG (Max 10MB)</small>
+            </div>
+
+            <!-- STEP 2: CLAIM CLASSIFICATION (REQUIRED) -->
+            <div style="margin-bottom:2rem; padding:1.5rem; background:#f8fafc; border-radius:8px; border:1px solid #e2e8f0;">
+                <h3 style="color:#1e40af; margin:0 0 1rem 0; font-size:1.1rem;">Step 2: Claim Classification (Required)</h3>
+                
+                <div style="margin-bottom:1rem;">
+                    <label style="display:block; margin-bottom:0.5rem; font-weight:600; color:#2d3748;">Claim Type:</label>
+                    <select id="claimType" required style="width:100%; padding:10px; border:2px solid #e2e8f0; border-radius:8px; font-size:0.95rem; background:#ffffff;">
+                        <option value="">-- Select Claim Type --</option>
+                        <option value="property_homeowners">Property - Homeowners</option>
+                        <option value="property_renters">Property - Renters</option>
+                        <option value="auto_collision">Auto - Collision</option>
+                        <option value="auto_comprehensive">Auto - Comprehensive</option>
+                        <option value="health_medical">Health - Medical Services</option>
+                        <option value="health_prescription">Health - Prescription</option>
+                    </select>
+                </div>
+
+                <div style="margin-bottom:1rem;">
+                    <label style="display:block; margin-bottom:0.5rem; font-weight:600; color:#2d3748;">Party Type:</label>
+                    <select id="partyType" required style="width:100%; padding:10px; border:2px solid #e2e8f0; border-radius:8px; font-size:0.95rem; background:#ffffff;">
+                        <option value="">-- Select Party Type --</option>
+                        <option value="first_party">First-Party (Your own insurance)</option>
+                        <option value="third_party">Third-Party (Someone else's insurance)</option>
+                    </select>
+                </div>
+
+                <div style="margin-bottom:1rem;">
+                    <label style="display:block; margin-bottom:0.5rem; font-weight:600; color:#2d3748;">Claim Context:</label>
+                    <select id="claimContext" required style="width:100%; padding:10px; border:2px solid #e2e8f0; border-radius:8px; font-size:0.95rem; background:#ffffff;">
+                        <option value="">-- Select Context --</option>
+                        <option value="personal">Personal</option>
+                        <option value="commercial">Commercial (Business-related)</option>
+                    </select>
+                </div>
+
+                <div style="margin-bottom:0;">
+                    <label style="display:block; margin-bottom:0.5rem; font-weight:600; color:#2d3748;">Estimated Claim Amount:</label>
+                    <select id="claimAmount" required style="width:100%; padding:10px; border:2px solid #e2e8f0; border-radius:8px; font-size:0.95rem; background:#ffffff;">
+                        <option value="">-- Select Amount Range --</option>
+                        <option value="under_5k">Under $5,000</option>
+                        <option value="5k_to_25k">$5,000 - $25,000</option>
+                        <option value="25k_to_50k">$25,000 - $50,000</option>
+                        <option value="over_50k">Over $50,000 (May require attorney)</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- STEP 3: LETTER CONTEXT (STRUCTURED ONLY) -->
+            <div style="margin-bottom:2rem; padding:1.5rem; background:#f8fafc; border-radius:8px; border:1px solid #e2e8f0;">
+                <h3 style="color:#1e40af; margin:0 0 1rem 0; font-size:1.1rem;">Step 3: Letter Context</h3>
+                
+                <div style="margin-bottom:1rem;">
+                    <label style="display:block; margin-bottom:0.5rem; font-weight:600; color:#2d3748;">Does the letter mention any of the following? (Check all that apply)</label>
+                    <div style="background:#ffffff; padding:1rem; border-radius:6px; border:1px solid #e2e8f0;">
+                        <label style="display:block; margin-bottom:0.5rem; cursor:pointer;">
+                            <input type="checkbox" id="mentionsFraud" value="fraud" style="margin-right:0.5rem;">
+                            Fraud, misrepresentation, or false statements
+                        </label>
+                        <label style="display:block; margin-bottom:0.5rem; cursor:pointer;">
+                            <input type="checkbox" id="mentionsEUO" value="euo" style="margin-right:0.5rem;">
+                            Examination Under Oath (EUO)
+                        </label>
+                        <label style="display:block; margin-bottom:0.5rem; cursor:pointer;">
+                            <input type="checkbox" id="mentionsRecordedStatement" value="recorded_statement" style="margin-right:0.5rem;">
+                            Recorded statement request
+                        </label>
+                        <label style="display:block; margin-bottom:0.5rem; cursor:pointer;">
+                            <input type="checkbox" id="mentionsReservation" value="reservation" style="margin-right:0.5rem;">
+                            Reservation of rights
+                        </label>
+                        <label style="display:block; margin-bottom:0.5rem; cursor:pointer;">
+                            <input type="checkbox" id="mentionsAttorney" value="attorney" style="margin-right:0.5rem;">
+                            Attorney, lawyer, or legal counsel
+                        </label>
+                        <label style="display:block; margin-bottom:0; cursor:pointer;">
+                            <input type="checkbox" id="mentionsBadFaith" value="bad_faith" style="margin-right:0.5rem;">
+                            Bad faith or litigation threats
+                        </label>
+                    </div>
+                </div>
+
+                <div style="margin-bottom:0;">
+                    <label style="display:block; margin-bottom:0.5rem; font-weight:600; color:#2d3748;">Letter Date (if visible):</label>
+                    <input type="date" id="letterDate" style="width:100%; padding:10px; border:2px solid #e2e8f0; border-radius:8px; font-size:0.95rem; background:#ffffff;">
+                </div>
+            </div>
+
+            <!-- OVER-DISCLOSURE WARNING -->
+            <div style="background:#fef3c7; border:2px solid #f59e0b; border-radius:8px; padding:1rem; margin-bottom:2rem;">
+                <p style="margin:0; color:#92400e; font-size:0.9rem; font-weight:500;">
+                    ⚠️ <strong>Over-Disclosure Warning:</strong> Do NOT provide narrative explanations, stories, or additional details. 
+                    This system uses only the information in your uploaded letter and the structured selections above. 
+                    Additional information can harm your claim.
+                </p>
+            </div>
+
+            <button type="submit" id="analyzeBtn" 
+                style="background:#1e40af; color:white; padding:14px 28px; border:none; border-radius:10px; cursor:pointer; font-family:'Inter',sans-serif; font-size:1rem; font-weight:600; width:100%; transition:background 0.2s;">
+                Analyze Letter
+            </button>
+
+            <div id="uploadStatus" style="margin-top: 1rem; display: none;">
+                <p id="statusText" style="color:#2d3748; font-weight:500;"></p>
+            </div>
+        </div>
+
+        <!-- ANALYSIS RESULTS (Hidden until complete) -->
+        <div id="analysisResults" style="max-width:900px; margin:2rem auto; display:none;">
+            <div style="background:#ffffff; border-radius:12px; padding:2rem; color:#2d3748; border:1px solid #e2e8f0;">
+                <h3 style="color:#1e40af; font-size:1.5rem; margin-bottom:1.5rem;">Letter Analysis</h3>
+                
+                <!-- Classification Results -->
+                <div id="classificationResults" style="background:#f8fafc; padding:1.5rem; border-radius:8px; margin-bottom:1.5rem; border:1px solid #e2e8f0;"></div>
+                
+                <!-- Phase Detection Results -->
+                <div id="phaseResults" style="background:#f8fafc; padding:1.5rem; border-radius:8px; margin-bottom:1.5rem; border:1px solid #e2e8f0;"></div>
+                
+                <!-- Risk Assessment -->
+                <div id="riskAssessment" style="background:#fef3c7; padding:1.5rem; border-radius:8px; margin-bottom:1.5rem; border:2px solid #f59e0b;"></div>
+                
+                <!-- Analysis Content -->
+                <div id="analysisContent" style="background:#f8fafc; padding:1.5rem; border-radius:8px; margin-bottom:1.5rem; border:1px solid #e2e8f0;"></div>
+                
+                <!-- Next Steps (Only if safe to proceed) -->
+                <div id="nextSteps" style="display:none;">
+                    <button id="generateResponseBtn" 
+                        style="background:#059669; color:white; padding:14px 28px; border:none; border-radius:10px; cursor:pointer; font-family:'Inter',sans-serif; font-size:1rem; font-weight:600; width:100%;">
+                        Generate Procedural Response
+                    </button>
+                </div>
+                
+                <!-- Hard Stop Message (If triggered) -->
+                <div id="hardStopMessage" style="display:none; background:#7f1d1d; border:2px solid #dc2626; border-radius:8px; padding:1.5rem; color:#ffffff;">
+                    <h4 style="color:#fca5a5; margin:0 0 1rem 0;">⛔ Professional Representation Required</h4>
+                    <p id="hardStopReason" style="margin:0; font-size:0.95rem; line-height:1.6;"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module">
+        import { uploadFile, saveDocumentToDatabase } from './src/components/UploadForm.js';
+        import { getCurrentUser } from './src/components/Auth.js';
+        
+        let currentUser = null;
+        let uploadedFilePath = null;
+        
+        document.addEventListener('DOMContentLoaded', async () => {
+            currentUser = await getCurrentUser();
+            if (!currentUser) {
+                currentUser = { id: 'test-user-123', email: 'test@example.com' };
+                console.log('Using mock user for testing');
+            }
+        });
+        
+        document.getElementById('analyzeBtn').addEventListener('click', async () => {
+            // Validation
+            const file = document.getElementById('file').files[0];
+            const claimType = document.getElementById('claimType').value;
+            const partyType = document.getElementById('partyType').value;
+            const claimContext = document.getElementById('claimContext').value;
+            const claimAmount = document.getElementById('claimAmount').value;
+            
+            if (!file) {
+                alert('Please upload a letter file.');
+                return;
+            }
+            
+            if (!claimType || !partyType || !claimContext || !claimAmount) {
+                alert('Please complete all required classification fields.');
+                return;
+            }
+            
+            // Check for hard-stop conditions
+            const hardStopChecks = {
+                fraud: document.getElementById('mentionsFraud').checked,
+                euo: document.getElementById('mentionsEUO').checked,
+                recordedStatement: document.getElementById('mentionsRecordedStatement').checked,
+                reservation: document.getElementById('mentionsReservation').checked,
+                attorney: document.getElementById('mentionsAttorney').checked,
+                badFaith: document.getElementById('mentionsBadFaith').checked
+            };
+            
+            // Check commercial + high amount
+            const isHighRiskCommercial = claimContext === 'commercial' && 
+                (claimAmount === '25k_to_50k' || claimAmount === 'over_50k');
+            
+            showStatus('Uploading file...');
+            
+            try {
+                // Upload file
+                uploadedFilePath = await uploadFile(file, currentUser.id);
+                await saveDocumentToDatabase(currentUser.id, file.name, uploadedFilePath);
+                
+                showStatus('Analyzing letter and checking safety conditions...');
+                
+                // Prepare classification data
+                const classificationData = {
+                    claimType,
+                    partyType,
+                    claimContext,
+                    claimAmount,
+                    letterDate: document.getElementById('letterDate').value,
+                    hardStopChecks,
+                    isHighRiskCommercial
+                };
+                
+                // Call analysis endpoint
+                const response = await fetch('/.netlify/functions/analyze-insurance-letter', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        filePath: uploadedFilePath,
+                        fileName: file.name,
+                        classification: classificationData,
+                        userId: currentUser.id
+                    })
+                });
+                
+                const result = await response.json();
+                
+                hideStatus();
+                displayAnalysisResults(result);
+                
+            } catch (error) {
+                showStatus(`Error: ${error.message}`);
+                console.error('Analysis error:', error);
+            }
+        });
+        
+        function displayAnalysisResults(result) {
+            document.getElementById('analysisResults').style.display = 'block';
+            
+            // Display classification
+            document.getElementById('classificationResults').innerHTML = `
+                <h4 style="color:#1e40af; margin:0 0 1rem 0;">Claim Classification</h4>
+                <p style="margin:0.5rem 0;"><strong>Type:</strong> ${result.classification.claimType}</p>
+                <p style="margin:0.5rem 0;"><strong>Party:</strong> ${result.classification.partyType}</p>
+                <p style="margin:0.5rem 0;"><strong>Context:</strong> ${result.classification.claimContext}</p>
+            `;
+            
+            // Display phase detection
+            document.getElementById('phaseResults').innerHTML = `
+                <h4 style="color:#1e40af; margin:0 0 1rem 0;">Letter Phase</h4>
+                <p style="margin:0;"><strong>${result.phase.detected}</strong></p>
+                <p style="margin:0.5rem 0; font-size:0.9rem; color:#64748b;">${result.phase.description}</p>
+            `;
+            
+            // Display risk assessment
+            if (result.hardStop) {
+                document.getElementById('hardStopMessage').style.display = 'block';
+                document.getElementById('hardStopReason').textContent = result.hardStopReason;
+                document.getElementById('nextSteps').style.display = 'none';
+            } else {
+                document.getElementById('riskAssessment').innerHTML = `
+                    <h4 style="color:#92400e; margin:0 0 1rem 0;">Risk Assessment</h4>
+                    <p style="margin:0; color:#92400e;">${result.riskAssessment}</p>
+                `;
+                document.getElementById('analysisContent').innerHTML = `
+                    <h4 style="color:#1e40af; margin:0 0 1rem 0;">Analysis</h4>
+                    <div style="line-height:1.6;">${result.analysis}</div>
+                `;
+                document.getElementById('nextSteps').style.display = 'block';
+            }
+        }
+        
+        function showStatus(message) {
+            document.getElementById('statusText').textContent = message;
+            document.getElementById('uploadStatus').style.display = 'block';
+        }
+        
+        function hideStatus() {
+            document.getElementById('uploadStatus').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
+
