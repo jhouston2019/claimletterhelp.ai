@@ -117,10 +117,10 @@ CREATE POLICY "Users can delete own files" ON storage.objects
 
 1. Go to your Stripe dashboard
 2. Create products for each plan:
-   - **Standard Letter Response** - $79 one-time
+   - **Standard Letter Response** - $97 one-time
    - **Complex Letter Response** - $99 one-time
    - **Starter Plan** - $19/month
-   - **Pro Plan** - $79/month
+   - **Pro Plan** - $97/month
    - **Pro+ Plan** - $99/month
 
 3. Note the price IDs and add them to your environment variables
