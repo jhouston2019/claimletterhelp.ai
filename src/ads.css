@@ -1,0 +1,171 @@
+/* ============================================
+   ADSENSE / NATIVE ADS STYLES
+   Cloned from Tax Letter Help & IRS Audit Response
+   DO NOT MODIFY - Insurance-safe styling
+   ============================================ */
+
+/* Base ad container styling */
+.native-ad {
+  margin: 40px auto;
+  padding: 20px;
+  max-width: 800px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* Ad label - insurance-safe language */
+.ad-label {
+  font-size: 0.75rem;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin: 0 0 12px 0;
+  font-weight: 500;
+}
+
+/* Post-content ad (primary placement) */
+.post-content-ad {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+/* Exit grid ad (desktop only) */
+.exit-grid-ad {
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+
+/* Mobile footer sticky ad */
+.mobile-footer-ad {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background: #ffffff;
+  border-top: 2px solid #e2e8f0;
+  box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.1);
+  padding: 12px;
+  max-height: 120px;
+  overflow: hidden;
+}
+
+/* Dismiss button for mobile footer */
+.ad-dismiss {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: #64748b;
+  color: #ffffff;
+  border: none;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  font-size: 14px;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  transition: background 0.2s;
+}
+
+.ad-dismiss:hover {
+  background: #475569;
+}
+
+/* Desktop-only visibility */
+.desktop-only {
+  display: block;
+}
+
+/* Mobile-only visibility */
+.mobile-only {
+  display: none;
+}
+
+/* Responsive breakpoint */
+@media (max-width: 767px) {
+  .desktop-only {
+    display: none;
+  }
+  
+  .mobile-only {
+    display: block;
+  }
+  
+  .native-ad {
+    margin: 30px 16px;
+    padding: 16px;
+  }
+  
+  .post-content-ad {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+}
+
+/* Ensure ads don't interfere with CTAs */
+.native-ad + section[style*="background:#22c55e"],
+.native-ad + section[style*="background:linear-gradient"] {
+  margin-top: 60px;
+}
+
+/* AdSense responsive container */
+.adsbygoogle {
+  display: block;
+  min-height: 100px;
+  background: #f1f5f9;
+  border-radius: 4px;
+}
+
+/* Loading state */
+.adsbygoogle:empty::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(90deg, #f1f5f9 25%, #e2e8f0 50%, #f1f5f9 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+  border-radius: 4px;
+}
+
+@keyframes loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* Ensure no ads above the fold */
+body > main > section:first-of-type .native-ad {
+  display: none;
+}
+
+/* Hide ads on excluded pages */
+body[data-page="checkout"] .native-ad,
+body[data-page="login"] .native-ad,
+body[data-page="dashboard"] .native-ad,
+body[data-page="payment"] .native-ad,
+body[data-page="upload"] .native-ad {
+  display: none !important;
+}
+
+/* Trust preservation - no ads near critical instructions */
+.native-ad {
+  /* Ensure spacing from important content */
+  clear: both;
+}
+
+/* Print media - hide ads */
+@media print {
+  .native-ad {
+    display: none !important;
+  }
+}

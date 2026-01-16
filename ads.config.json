@@ -1,0 +1,92 @@
+{
+  "provider": "adsense",
+  "clientId": "ca-pub-XXXXXXXXXXXXXXXX",
+  "slotIds": {
+    "postContent": "POST_CONTENT_SLOT_ID_INS",
+    "exitGrid": "EXIT_GRID_SLOT_ID_INS",
+    "mobileFooter": "MOBILE_FOOTER_SLOT_ID_INS"
+  },
+  "placements": {
+    "postContent": {
+      "label": "Sponsored Resources",
+      "devices": ["desktop", "mobile"],
+      "location": "After main explanation, before How It Works",
+      "priority": 1
+    },
+    "exitGrid": {
+      "label": "Additional Claim Support Options",
+      "devices": ["desktop"],
+      "location": "Before final CTA section",
+      "priority": 2
+    },
+    "mobileFooter": {
+      "label": "Related Services",
+      "devices": ["mobile"],
+      "location": "Fixed bottom sticky",
+      "priority": 3,
+      "dismissible": true
+    }
+  },
+  "limits": {
+    "maxAdsDesktop": 3,
+    "maxAdsMobile": 2,
+    "maxAdsPerSession": 5,
+    "scrollThreshold": 0.5,
+    "lazyLoadMargin": "200px"
+  },
+  "pageExclusions": [
+    "/checkout",
+    "/login",
+    "/dashboard",
+    "/payment",
+    "/upload-hardened",
+    "/admin"
+  ],
+  "pagesWithAds": [
+    "insurance-claim-letter-help.html",
+    "homeowners-claim-letter-help.html",
+    "auto-claim-letter-help.html",
+    "commercial-claim-letter-help.html",
+    "insurance-claim-help.html",
+    "insurance-appeal-letter-help.html",
+    "claim-denied-help.html",
+    "insurance-claim-denied-letter.html",
+    "bad-faith-insurance-letter.html",
+    "insurance-payment-dispute-letter.html",
+    "proof-of-loss-letter-help.html",
+    "insurance-response-letter-generator.html",
+    "insurance-written-appeal-letter.html",
+    "examples.html",
+    "claim-letter-help-vs-attorney.html",
+    "claim-letter-help-vs-chatgpt.html",
+    "claim-letter-help-not-legal-advice.html"
+  ],
+  "copyRules": {
+    "allowed": [
+      "Sponsored Resources",
+      "Additional Claim Support Options",
+      "Related Services"
+    ],
+    "forbidden": [
+      "Deals",
+      "Offers",
+      "Recommended",
+      "Best Options",
+      "Insurer Endorsed"
+    ]
+  },
+  "implementation": {
+    "status": "complete",
+    "clonedFrom": "Tax Letter Help & IRS Audit Response",
+    "dateImplemented": "2026-01-15",
+    "version": "1.0.0"
+  },
+  "nextSteps": [
+    "Replace ca-pub-XXXXXXXXXXXXXXXX with actual AdSense client ID",
+    "Replace slot IDs with actual AdSense slot IDs",
+    "Test on staging environment",
+    "Verify page exclusions work correctly",
+    "Monitor conversion rates for any impact",
+    "Track RPM and viewability metrics"
+  ]
+}
