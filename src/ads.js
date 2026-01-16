@@ -141,6 +141,18 @@ function loadAds() {
   if (!shouldShowAds()) return;
   
   const mobile = isMobile();
+  const isLandingPage = document.querySelector('.landing-only') !== null;
+  
+  // Landing page: ONLY ONE AD (post-content)
+  if (isLandingPage) {
+    console.log('[Ads] Landing page detected - loading single ad only');
+    if (document.getElementById('ad-post-content')) {
+      lazyLoadAd('ad-post-content', SLOT_IDS.POST_CONTENT);
+    }
+    return; // Exit early - no other ads on landing page
+  }
+  
+  // Regular SEO pages: Multiple ads based on device
   const maxAds = mobile ? AD_CONFIG.maxAdsMobile : AD_CONFIG.maxAdsDesktop;
   
   console.log('[Ads] Loading ads for device:', mobile ? 'mobile' : 'desktop', 'max:', maxAds);

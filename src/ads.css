@@ -163,6 +163,13 @@ body[data-page="upload"] .native-ad {
   clear: both;
 }
 
+/* Landing page specific - single ad only */
+.landing-only {
+  /* Ensure proper spacing on landing page */
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
 /* Print media - hide ads */
 @media print {
   .native-ad {
