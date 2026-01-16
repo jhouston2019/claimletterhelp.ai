@@ -9,6 +9,10 @@ import { join } from 'path';
 
 // Pages that should have ads (SEO/informational only)
 const SEO_PAGES = [
+  // Landing page
+  'index.html',
+  
+  // Original batch
   'homeowners-claim-letter-help.html',
   'auto-claim-letter-help.html',
   'commercial-claim-letter-help.html',
@@ -24,7 +28,28 @@ const SEO_PAGES = [
   'examples.html',
   'claim-letter-help-vs-attorney.html',
   'claim-letter-help-vs-chatgpt.html',
-  'claim-letter-help-not-legal-advice.html'
+  'claim-letter-help-not-legal-advice.html',
+  
+  // Additional SEO pages
+  'insurance-adjuster-letter.html',
+  'denial-letter-response.html',
+  'insurance-claim-delay-letter.html',
+  'certified-mail-insurance-letter.html',
+  'partial-denial-letter-response.html',
+  'insurance-demand-letter.html',
+  'insurance-supervisor-escalation-letter.html',
+  'lowball-insurance-offer-letter.html',
+  'insurance-settlement-too-low-letter.html',
+  'claim-letter-response.html',
+  'insurance-claim-underpaid-letter.html',
+  'insurance-company-not-responding-letter.html',
+  'insurance-claim-escalation-letter.html',
+  'insurance-claim-partially-denied-letter.html',
+  'insurance-claim-stalling-letter.html',
+  'request-for-information-letter.html',
+  'reservation-of-rights-letter-response.html',
+  'claim-delay-no-response.html',
+  'underpaid-insurance-claim.html'
 ];
 
 // Pages to EXCLUDE (checkout, auth, dashboard)
