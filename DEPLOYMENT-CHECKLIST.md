@@ -22,7 +22,7 @@
 
 ### **1.3 Stripe Setup**
 - [ ] Create Stripe account at [stripe.com](https://stripe.com)
-- [ ] Create product: "Standard Letter Response" ($97 one-time)
+- [ ] Create product: "Standard Letter Response" ($19 one-time)
 - [ ] Create product: "Complex Letter Response" ($99 one-time)
 - [ ] Create product: "Starter Plan" ($19/month)
 - [ ] Create product: "Pro Plan" ($97/month)

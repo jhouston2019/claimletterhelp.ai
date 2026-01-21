@@ -197,14 +197,14 @@
 ### **Required Pricing Copy:**
 
 **Expected:**
-- "$97 — One-Time Procedural Correspondence Preparation"
+- "$19 — One-Time Procedural Correspondence Preparation"
 - No outcome-based claims
 - No savings-based claims
 - Explicit statement: "May refuse output"
 
 **Actual (pricing.html):**
 - ✅ Title: "Procedural Correspondence Preparation"
-- ✅ Price: "$97 one-time"
+- ✅ Price: "$19 one-time"
 - ✅ Includes: "May refuse output in dangerous scenarios"
 - ✅ No outcome promises
 - ✅ No savings claims
